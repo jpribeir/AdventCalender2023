@@ -1,3 +1,11 @@
+To initialize repo
+> git init
+> it add <files>
+> git commit -m "Comment here"
+> git branch -M main
+> git remote add origin https://github.com/USERNAME/REPOSITORY.git
+> git push -u origin main
+
 To clone and manage repo in new machine:
 > git clone https://github.com/USERNAME/REPOSITORY.git
 
@@ -16,9 +24,9 @@ To reset file from main
 > git checkout origin [filename]
 
 ------------------
-git init
-  git add README.md
-  git commit -m "first commit"
-  git branch -M main
-  git remote add origin https://github.com/jpribeir/AdventCalender2023.git
-  git push -u origin main
+> git init
+> it add <files>
+git commit -m "comm"
+git branch -M main
+git remote add origin https://github.com/jpribeir/AdventCalender2023.git
+git push -u origin main
