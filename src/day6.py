@@ -1,4 +1,4 @@
-# Day 5 of the 2023 Advent of Code
+# Day 6 of the 2023 Advent of Code
 # Read input file
 with open("../include/input6.inc","r") as boat_race_file:
     time_list = list(map(int,((boat_race_file.readline()).split(":")[1]).split()))
