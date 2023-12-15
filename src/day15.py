@@ -33,17 +33,16 @@ for each in hash_list:
         if box not in box_dict.keys(): box_dict[box] = [label+" "+lens_str]
         else:
             for i,lens in enumerate(box_dict[box]):
-                if label in lens:
+                if lens.startswith(label+" "):
                     (box_dict[box])[i] = label+" "+lens_str
                     break
             else: box_dict[box].append(label+" "+lens_str)
     elif "-" in each:
         if box in box_dict.keys():
             for lens in box_dict[box]:
-                if label in lens:
+                if lens.startswith(label+" "):
                     (box_dict[box]).remove(lens)
                     break
-            if box_dict[box] == []: del(box_dict[box])
 focus_pwr = 0
 for box in box_dict:
     for i,lens in enumerate(box_dict[box]): focus_pwr += (box+1)*(i+1)*(int(lens.split(" ")[1]))
