@@ -23,7 +23,7 @@ with open("../include/input15.inc","r") as hash_file:
 ########################### Part 1 ###########################
 hash_sum = 0
 for each in hash_list: hash_sum += getHash(each)
-print("Part1: %s"%hash_sum)
+print("Part 1: %s"%hash_sum)
 
 ########################### Part 2 ###########################
 box_dict = {}
@@ -46,4 +46,4 @@ for each in hash_list:
 focus_pwr = 0
 for box in box_dict:
     for i,lens in enumerate(box_dict[box]): focus_pwr += (box+1)*(i+1)*(int(lens.split(" ")[1]))
-print("Part2: %s"%focus_pwr)
+print("Part 2: %s"%focus_pwr)
